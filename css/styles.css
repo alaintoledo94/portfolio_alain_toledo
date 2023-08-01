@@ -1,0 +1,294 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+body{
+    font-family: 'Inter', sans-serif;
+    
+}
+
+/* INDEX */
+.body_index {
+  background-color: #353535;
+  
+}
+
+.index_img {
+  width: 450px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.nombre_1 {
+  font-weight: bold;
+  margin-bottom: -10px;
+  color: #4e4feb;
+}
+
+.nombre_2 {
+  font-weight: bold;
+  font-size: 2rem;
+  color: white;
+  margin-bottom: -10px;
+}
+
+.nombre_3 {
+  font-size: 2rem;
+  color: white;
+  margin-bottom: -2px;
+}
+
+.nombres_index{
+    
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.section1 {
+  margin-top: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn_index{
+    border: none;
+    border-radius: 5px;
+    background-color: #4e4feb;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 8px;
+    width: 300px;
+ 
+}
+
+.btn_index:hover{
+    background-color: #7d7df8;
+}
+
+.btn_index a{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* PRINCIPAL: SOBRE MI */
+
+.img_perfil{
+    width: 350px;
+    padding: 0;
+    border: 5px solid #4e4feb;
+}
+
+.btn_descripcion{
+    border: none;
+    border-radius: 10px;
+    background-color: #4e4feb;
+    font-weight: bold;
+    padding: 10px;
+    width: 150px;
+    margin-right: 50px;
+    color: white;
+}
+
+.btn_descripcion:hover{
+    background-color: #7d7df8;
+}
+
+.descripcion_perfil{
+    
+    margin-top: 20PX;
+    font-weight: bold;
+    width: 700px;
+    
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor_perfil{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    
+}
+
+.contenedor_btn{
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    margin-top: 5px;
+}
+
+/* PRINCIPAL: PROYECTOS */
+.card{
+    border: none;
+}
+
+.card-title{
+    font-weight: bold;
+    
+}
+
+.card-text{
+    margin-top: -10px;
+}
+
+.card-img-top{
+    border: 5px solid #4e4feb;
+    border-radius: 0;
+}
+
+.card-body{
+    margin-top: 5px;
+    background-color: #4e4feb;
+    height: 75px;
+    text-align: center;
+    justify-content: center;
+    color: black;
+    border-radius: 2px;
+}
+
+.btn-primary{
+    background-color: #4e4feb;
+    border: none;
+}
+
+.btn-primary:hover{
+    background-color: #7d7df8;
+    border: none;
+}
+
+.contenedor_proyecto{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+
+.contenedor_contacto{
+    margin-top: 100px;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+
+.contacto_textarea{
+    height: 170px;
+}
+
+.contacto_btn{
+    margin-top: 8px;
+    background-color: #4e4feb;
+    color: white;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+.text_area{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    height: 100%;
+}
+
+
+
+.contacto_input{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    
+    width: 300px;
+    padding: 15px;
+    gap: 20px;
+}
+
+/* FOOTER */
+
+.footer_index{
+    margin-top: 100px;
+}
+
+.links{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.footer_boletin{
+    margin-top: 15px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor_input{
+    margin-top: -20px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.contenedorA{
+    margin-top: 16px;
+}
+
+.navbar-brand{
+    font-size: 1.5rem;
+}
+
+
+.contenedor_links{
+    margin-top: 25px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer_nom{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.footer_ocupacion{
+    margin-top: -20px;
+    font-size: 1.5rem;
+}
+
+footer input{
+    border: none;
+    border-radius: 5px;
+    margin-top: 5px;
+    padding: 5px;
+
+}
+
+footer button{
+    margin-top: 5px;
+    background-color: #353535;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    padding: 5px;
+}
+
+footer img{
+    margin-top: -20px;
+    width: 30px;
+    height: 30px;
+}

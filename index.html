@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/bootstrap/bootstrap.min.css" />
+  <link rel="stylesheet" href="./css/styles.css " />
+  <title>PORTFOLIO CON BOOTSTRAP</title>
+</head>
+
+<body class="body_index">
+
+  <!-- BARRA NAVEGACION -->
+  <nav class="navbar navbar-expand-lg navbar-dark " style="background-color: #4E4FEB; color: white;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Portfolio Alain Toledo</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse l" id="navbarNav">
+        <ul class="navbar-nav d-flex">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="./pages/principal.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./pages/sobremi.html">Sobre Mi</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./pages/proyectos.html">Proyectos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- FIN BARRA NAVEGACION -->
+
+  <!-- MAIN -->
+  <main>
+
+    <section class="container ">
+      <div class="row section1">
+        <div class="col-6 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6  nombres_index">
+          <p class="nombre_1">Hola, mi nombre es:</p>
+          <p class="nombre_2">ALAIN TOLEDO</p>
+          <p class="nombre_3">Desarrollador Web</p>
+          <button  class="btn_index"><a href="./pages/principal.html">CONOCEME</a></button>
+        </div>
+        <div class="col-6 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+          <img class="index_img" src="./assets/img/PERSONA.png">
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <!-- FIN MAIN -->
+
+  <footer>
+    <div class="container-fluid text-white p-3 mt-10 footer_index" style="background-color: #4E4FEB;">
+      <div class="row justify-content-between text-center ">
+        <div class="col-md-4 contenedorA">
+          <p class="footer_nom">ALAIN TOLEDO</p>
+          <p class="footer_ocupacion">DESARROLLADOR WEB</p>
+          <p class="footer_ocupacion">El Litre #2097, Rancagua, Chile.</p>
+          <div class="footer_contenedor_img">
+            <p class="index__sigueme">Sígueme</p>
+            <a href="#"><img class="img_footer" src="./assets/img/fb.svg" alt="Link Facebook"></a> 
+            <a href="#"><img class="img_footer" src="./assets/img/ig.svg" alt="Link Instagram"></a>
+            <a href="#"><img class="img_footer" src="./assets/img/link.svg" alt="Link Linkedin"></a>
+            <a href="#"><img class="img_footer" src="./assets/img/you.svg" alt="Link Youtube"></a>
+        </div>
+        </div>
+        
+        <ul class="col-md-4 contenedor_links">
+          <ul class="list-unstyled">
+            <li class="fw-bold ">Links</li>
+            <li><a href="./pages/principal.html" class="text-decoration-none text-white links">INICIO</a></li>
+            <li><a href="./pages/sobremi.html" class="text-decoration-none text-white links">SOBRE MI</a></li>
+            <li><a href="./pages/proyectos.html" class="text-decoration-none text-white links">PROYECTOS</a></li>
+            <li><a href="./pages/contacto.html" class="text-decoration-none text-white links">CONTACTO</a></li>
+          </ul>
+        </ul>
+
+        <div class="col-md-4 footer_boletin">
+          <p class="links">BOLETÍN</p>
+          <div class="contenedor_input">
+            <label for="">SUSCRIBIRSE PARA RECIBIR NOTIFICACIONES</label>
+            <input  type="text" placeholder="NOMBRE Y APELLIDO*">
+            <input type="text" placeholder="CORREO ELECTRONICO*">
+            <BUtton>SUSCRIBIRSE</BUtton>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
