@@ -344,7 +344,8 @@ footer img {
 
 @media (min-width: 0px) and (max-width: 575px) {
   .contenedor_principal_index {
-    display: grid;
+   
+    display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -354,7 +355,7 @@ footer img {
     display: grid;
     justify-content: center;
     align-items: center;
-    margin-left: 50px;
+ 
   }
 
   .contenedor_img {
