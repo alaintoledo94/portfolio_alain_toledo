@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/styles.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/styles.css">
+  <title>Principal</title>
 </head>
+
 <body>
-      <!-- BARRA NAVEGACION -->
+  <!-- BARRA NAVEGACION -->
   <nav class="navbar navbar-expand-lg navbar-dark " style="background-color: #4E4FEB; color: white;">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Portfolio Alain Toledo</a>
+      <a class="navbar-brand" href="../index.html">Portfolio Alain Toledo</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -19,10 +21,10 @@
       <div class="collapse navbar-collapse l" id="navbarNav">
         <ul class="navbar-nav d-flex">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+            <a class="nav-link active" aria-current="page" href="./principal.html">Inicio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Sobre Mi</a>
+            <a class="nav-link" href="../pages/sobremi.html">Sobre Mi</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Proyectos</a>
@@ -38,91 +40,126 @@
 
   <!-- INICIO MAIN -->
   <main>
-    
-    <!-- MAIN-SOBRE MI -->
-    <section class="container ">
-            <div class="row contenedor_perfil">
-                <img class="col-6 img_perfil" src="../assets/img/VENOM RUIDO.png" alt="imagen_perfil">
-        
-        
-            
-                <p class="col-6 descripcion_perfil">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean luctus odio et quam faucibus interdum. Etiam ut nunc sodales, consectetur metus quis, volutpat sem. Nullam scelerisque libero faucibus enim blandit facilisis. Etiam massa enim, finibus ut ex porttitor, efficitur feugiat ligula. Sed non ornare sapien.Phasellus quam urna, facilisis eget risus eu, condimentum condimentum mi. Phasellus iaculis, elit vitae aliquet porttitor, nulla arcu efficitur magna, eu pulvinar sapien risus ac turpis. Donec nec commodo lorem, vel molestie risus. Duis porta ipsum at justo varius, vitae pellentesque neque ornare.
 
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean luctus odio et quam faucibus interdum. Etiam ut nunc sodales, consectetur metus quis, volutpat sem. Nullam scelerisque libero faucibus enim blandit facilisis. Etiam massa enim, finibus ut ex porttitor.
-                </p>
-            
-            <div class="row ">
-               
-                <div class="col-12 contenedor_btn">
-                    <button class="btn_descripcion">VER MAS</button>
-                    <BUTton class="btn_descripcion">DESCARGAR CV</BUTton>
-                </div>
-               
-            </div>
+    <!-- MAIN-SOBRE MI -->
+
+    <section class="container bg-light shadow-sm  mt-3 rounded-3 ">
+
+      <div class="row contenedor_perfil p-3">
+        <h4 class="encabezados">Sobre Mi</h4>
+        <div class="card bg-dark rounded-5 p-3 shadow-lg" style="width: 18rem;">
+          <img src="../assets/img/VENOM RUIDO.png" class="card-img-top rounded-5 " alt="...">
+
+          <ul class="list-group list-group-flush rounded-4 mt-2">
+            <li class="list-group-item fw-bolder">Alain Toledo Gutierrez</li>
+            <li class="list-group-item fw-bolder">Desarrollador Web</ /li>
+            <li class="list-group-item fw-bolder">Rancagua, Chile</ /li>
+          </ul>
+        </div>
+
+
+
+        <p class="col-6 descripcion_perfil ">Me considero una persona responsable y comprometida que ha obtenido el
+          título de Programador Computacional en el Instituto Profesional AIEP, sede Rancagua <br> Me considero alguien
+          con una gran capacidad de aprendizaje y habilidades para relacionarme con las personas. <br>En mi opinión, la
+          comunicación es fundamental en cualquier entorno laboral, por lo que siempre priorizo la transparencia y la
+          colaboración con mis colegas. <br><br>
+
+          Uno de mis principales objetivos es desarrollar mi capacidad para crear planes que impulsen el crecimiento de
+          cualquier proyecto en el que esté involucrado. <br> Además, me considero una persona investigadora y
+          proactiva, siempre en búsqueda de nuevas soluciones y oportunidades de mejora. <br><br>
+
+          Uno de mis principales objetivos es desarrollar mi capacidad para crear planes que impulsen el crecimiento de
+          cualquier proyecto en el que esté involucrado. <br>Además, me considero una persona investigadora y proactiva,
+          siempre en búsqueda de nuevas soluciones y oportunidades de mejora.
+        </p>
+
+        <div class="row ">
+
+          <div class="col-6  contenedor_btn">
+            <button class="btn_descripcion bg-dark shadow-sm rounded-3 border-0  p-2 fw-bold text-light "><a
+                href="../pages/sobremi.html">VER
+                MAS</a></button>
+          </div>
+          <div class="col-6  contenedor_btn">
+            <BUTton class="btn_descripcion bg-dark shadow-sm rounded-3 border-0  p-2 fw-bold text-light"><a
+                href="../assets/CV.pdf" download="Curriculum">DESCARGAR</a>
+              CV</BUTton>
+          </div>
+
+
 
         </div>
+
+      </div>
     </section>
 
     <!-- MAIN PROYECTOS -->
-    <section class="container ">
-        <div class="row contenedor_proyecto">
-            <div class="card col-4" style="width: 18rem;">
-                <img src="../assets/img/engranaje.png" class="card-img-top proyecto_img" alt="...">
-                <div class="card-body">
-                <h5 class="card-title">Nombre del Proyecto</h5>
-                <p class="card-text">Descripcion corta del proyecto.</p>
-                <a href="#" class="btn btn-primary">Acceder al Proyecto</a>
-                </div>
-            </div>
+    <section class="container shadow-sm bg-light rounded-3   mt-5 ">
+      <div class="row contenedor_proyecto ">
+        <h4 class="encabezados">Proyectos</h4>
+        <div class="card col-4 bg-dark p-2 shadow-sm" style="width: 18rem;">
+          <img src="../assets/img/engranaje.png" class="card-img-top proyecto_img bg-dark-subtle rounded-2 " alt="...">
+          <div class="card-body rounded-3 mt-2 text-bg-dark">
+            <h5 class="card-title">Nombre del Proyecto</h5>
+            <p class="card-text">Descripcion corta del proyecto.</p>
+            <a href="../pages/proyectos.html" class="btn btn-primary mt-4 shadow-sm bg-dark p-2">Acceder al Proyecto</a>
+          </div>
+        </div>
 
-            <div class="card col-4" style="width: 18rem;">
-                <img src="../assets/img/engranaje.png" class="card-img-top proyecto_img" alt="...">
-                <div class="card-body">
-                <h5 class="card-title">Nombre del Proyecto</h5>
-                <p class="card-text">Descripcion corta del proyecto.</p>
-                <a href="#" class="btn btn-primary">Acceder al Proyecto</a>
-                </div>
-            </div>
-            
-            <div class="card col-4" style="width: 18rem;">
-                <img src="../assets/img/engranaje.png" class="card-img-top proyecto_img" alt="...">
-                <div class="card-body">
-                <h5 class="card-title">Nombre del Proyecto</h5>
-                <p class="card-text">Descripcion corta del proyecto.</p>
-                <a href="#" class="btn btn-primary">Acceder al Proyecto</a>
-                </div>
-            </div>  
-        </div>    
+        <div class="card col-4 bg-dark p-2 shadow-sm " style="width: 18rem;">
+          <img src="../assets/img/engranaje.png" class="card-img-top proyecto_img bg-light bg-dark-subtle rounded-2"
+            alt="...">
+          <div class="card-body rounded-3 mt-2 text-bg-dark">
+            <h5 class="card-title">Nombre del Proyecto</h5>
+            <p class="card-text">Descripcion corta del proyecto.</p>
+            <a href="../pages/proyectos.html" class="btn btn-primary mt-4 bg-dark">Acceder al Proyecto</a>
+          </div>
+        </div>
+
+        <div class="card col-4 bg-dark p-2" style="width: 18rem;">
+          <img src="../assets/img/engranaje.png" class="card-img-top proyecto_img bg-light bg-dark-subtle rounded-2"
+            alt="...">
+          <div class="card-body rounded-3 mt-2 shadow-sm text-bg-dark">
+            <h5 class="card-title">Nombre del Proyecto</h5>
+            <p class="card-text">Descripcion corta del proyecto.</p>
+            <a href="../pages/proyectos.html" class="btn btn-primary mt-4 bg-dark">Acceder al Proyecto</a>
+          </div>
+        </div>
+      </div>
     </section>
 
   </main>
 
-    <!-- MAIN CONTACTO -->
-<section class="container ">
-   
-        <form class="row contenedor_contacto" action="post">
-            <div class="col-6 col-sm-12 contacto_input">
-                <input class="contacto_input" type="text" placeholder="NOMBRE Y APELLIDO*">
-                <input class="contacto_input" type="text" placeholder="NUM TELEFONO*">
-                <input class="contacto_input" type="text" placeholder="CORREO ELECTRONICO*">
-            </div>
+  <!-- MAIN CONTACTO -->
+  <section class="container bg-light shadow-sm rounded-3 ">
 
-            <div class="col-6 col-sm-12 text_area">
-                <textarea class="contacto_textarea"  name="" id="" cols="30" rows="10" placeholder="MENSAJE..."></textarea> 
-                <button class="contacto_btn">ENVIAR MENSAJE</button>
-            </div>   
-         
-        </form>
-    
-</section>
-    <!-- FIN MAIN -->
+
+    <form class="row contenedor_contacto m-5 p-5" action="#">
+      <h4 class="encabezados">Contacto</h4>
+      <div class="col-6 col-sm-12 contacto_input">
+        <input class="contacto_input shadow-sm" type="text" placeholder="NOMBRE Y APELLIDO*">
+        <input class="contacto_input shadow-sm" type="text" placeholder="NUM TELEFONO*">
+        <input class="contacto_input shadow-sm" type="text" placeholder="CORREO ELECTRONICO*">
+      </div>
+
+      <div class="col-6 col-sm-12 text_area">
+        <textarea class="contacto_textarea shadow-sm border-0" name="" id="" cols="30" rows="10"
+          placeholder="MENSAJE..."></textarea>
+        <button class="contacto_btn bg-dark shadow-sm">ENVIAR MENSAJE</button>
+      </div>
+
+    </form>
+
+  </section>
+  <!-- FIN MAIN -->
 
 
 
 
 
   <!-- INICIO FOOTER -->
-  
+
   <footer>
     <div class="container-fluid text-white p-3 mt-10 footer_index" style="background-color: #4E4FEB;">
       <div class="row justify-content-between text-center ">
@@ -132,20 +169,20 @@
           <p class="footer_ocupacion">El Litre #2097, Rancagua, Chile.</p>
           <div class="footer_contenedor_img">
             <p class="index__sigueme">Sígueme</p>
-            <a href="#"><img class="img_footer" src="../assets/img/fb.svg" alt="Link Facebook"></a> 
+            <a href="#"><img class="img_footer" src="../assets/img/fb.svg" alt="Link Facebook"></a>
             <a href="#"><img class="img_footer" src="../assets/img/ig.svg" alt="Link Instagram"></a>
             <a href="#"><img class="img_footer" src="../assets/img/link.svg" alt="Link Linkedin"></a>
             <a href="#"><img class="img_footer" src="../assets/img/you.svg" alt="Link Youtube"></a>
+          </div>
         </div>
-        </div>
-        
+
         <ul class="col-md-4 contenedor_links">
           <ul class="list-unstyled">
             <li class="fw-bold ">Links</li>
-            <li><a href="#" class="text-decoration-none text-white links">INICIO</a></li>
-            <li><a href="#" class="text-decoration-none text-white links">SOBRE MI</a></li>
-            <li><a href="#" class="text-decoration-none text-white links">PROYECTOS</a></li>
-            <li><a href="#" class="text-decoration-none text-white links">CONTACTO</a></li>
+            <li><a href="../pages/principal.html" class="text-decoration-none text-white links">INICIO</a></li>
+            <li><a href="../pages/sobremi.html" class="text-decoration-none text-white links">SOBRE MI</a></li>
+            <li><a href="../pages/proyectos.html" class="text-decoration-none text-white links">PROYECTOS</a></li>
+            <li><a href="../pages/contacto.html" class="text-decoration-none text-white links">CONTACTO</a></li>
           </ul>
         </ul>
 
@@ -153,17 +190,17 @@
           <p class="links">BOLETÍN</p>
           <div class="contenedor_input">
             <label for="">SUSCRIBIRSE PARA RECIBIR NOTIFICACIONES</label>
-            <input  type="text" placeholder="NOMBRE Y APELLIDO*">
-            <input type="text" placeholder="CORREO ELECTRONICO*">
-            <BUtton>SUSCRIBIRSE</BUtton>
+            <input class="p-2 m-1" type="text" placeholder="NOMBRE Y APELLIDO*">
+            <input class="p-2 m-1" type="text" placeholder="CORREO ELECTRONICO*">
+            <BUtton class="border-0 rounded-2 fw-bold p-2 m-2 shadow-sm">SUSCRIBIRSE</BUtton>
           </div>
         </div>
-        
+
       </div>
     </div>
   </footer>
-
   <!-- FIN FOOTER -->
-    <script src="../js/bootstrap.bundle.min.js"></script>
+  <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
