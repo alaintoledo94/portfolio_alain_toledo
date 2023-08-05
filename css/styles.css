@@ -20,6 +20,12 @@ body a {
   background-color: #353535;
 }
 
+.contenedor_p_index {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .index_img {
   width: 450px;
   display: grid;
@@ -342,6 +348,21 @@ footer img {
     align-items: center;
     justify-content: center;
     text-align: center;
+  }
+
+  .nombres_index {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+  }
+
+  .contenedor_img {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .index_img {
