@@ -307,11 +307,19 @@ body a {
 
 /* PROYECTOS */
 
-.carrusel1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+
+
+
+.centrar_carrusel{
+    width: 450px;
+    height: 450px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
 }
+
+
 
 footer input {
   border: none;
