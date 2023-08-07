@@ -15,6 +15,10 @@ body a {
   cursor: pointer;
 }
 
+nav {
+  background-color: #4e4feb;
+}
+
 /* INDEX */
 .body_index {
   background-color: #353535;
@@ -58,12 +62,7 @@ body a {
   justify-content: center;
 }
 
-.section1 {
-  margin-top: 120px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+
 
 .btn_index {
   background-color: #4e4feb;
@@ -223,7 +222,7 @@ body a {
   border: none;
   width: 300px;
   padding: 15px;
-  gap: 20px;
+  gap: 10px;
 }
 
 /* SOBRE-MI */
@@ -307,21 +306,15 @@ body a {
 
 /* PROYECTOS */
 
-
-
-
-
-.centrar_carrusel{
-    width: 450px;
-    height: 450px;
-    display: flex;
-    align-content: center;
-    justify-content: center;
+.centrar_carrusel {
+  width: 80vw;
+  height: 50vh;
+  display: flex;
+  align-content: center;
+  justify-content: center;
 }
 
-
-
-footer input {
+footer input{
   border: none;
   border-radius: 5px;
   margin-top: 5px;
@@ -344,6 +337,16 @@ footer img {
   height: 30px;
 }
 
+.carousel-control-prev-icon{
+  background-color: #000000;
+  border-radius: 5px;
+}
+
+.carousel-control-next-icon{
+  background-color: #000000;
+  border-radius: 5px;
+}
+
 @media (min-width: 768px) and (max-width: 914px) {
   .index_img {
     width: 350px;
@@ -351,19 +354,17 @@ footer img {
 }
 
 @media (min-width: 0px) and (max-width: 575px) {
-  .contenedor_principal_index {
-   
+  .contenedor_principal_index{
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
   }
 
-  .nombres_index {
+  .nombres_index{
     display: grid;
     justify-content: center;
     align-items: center;
- 
   }
 
   .contenedor_img {
@@ -377,4 +378,24 @@ footer img {
   .index_img {
     width: 250px;
   }
+
+  .imagenes_sobre_mi {
+    margin-top: 15px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .imagenes_sobre_mi img {
+    width: 80px;
+    height: auto;
+  }
+
+  .centrar_carrusel img{
+    width: 350px;
+    height: auto;
+  }
+
+
+
 }
