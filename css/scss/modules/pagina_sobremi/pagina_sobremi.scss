@@ -1,0 +1,34 @@
+section {
+  .contenedor_main_sobre-mi {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    .contenedor_img_p:hover .imgs {
+      @include animar-img;
+    }
+
+    .contenedor_img_p {
+      overflow: hidden;
+    }
+    .btn_sobre_mi:hover {
+      @include hover-principal;
+    }
+  }
+  div {
+    .imagenes_sobre_mi {
+      margin-top: 15px;
+      @include alinear-centro;
+    }
+    .imgf:hover {
+      -webkit-transform: rotateY(180deg);
+      -webkit-transform-style: preserve-3d;
+      transform: rotateY(180deg);
+      transform-style: preserve-3d;
+      transition: 0.8s ease-in-out;
+    }
+
+   
+    
+  }
+}

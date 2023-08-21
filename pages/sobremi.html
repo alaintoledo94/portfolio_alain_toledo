@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/css/styles.css">
     <title>Sobre Mi</title>
 </head>
 
 <body>
 
     <!-- BARRA NAVEGACION -->
-    <nav class="navbar navbar-expand-lg navbar-dark " >
+    <nav class="navbar navbar-expand-lg navbar-dark  ">
         <div class="container-fluid">
             <a class="navbar-brand" href="../index.html">Portfolio Alain Toledo</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -37,6 +37,13 @@
             </div>
         </div>
     </nav>
+
+    <nav class="text-light shadow bread" style="--bs-breadcrumb-divider: '•';" aria-label="breadcrumb">
+        <ol class="breadcrumb ">
+            <li class="breadcrumb-item"><a href="../index.html">Index</a></li>
+            <li class="breadcrumb-item active text-light" aria-current="page">Sobre Mi</li>
+        </ol>
+    </nav>
     <!-- FIN BARRA NAVEGACION -->
 
     <!-- INICIO MAIN-SOBRE MI -->
@@ -46,7 +53,11 @@
         <div class="row contenedor_main_sobre-mi bg-light p-3 shadow-sm rounded-3 ">
             <h1 class="mt-5 text-center  fs-3">Sobre Mi</h1>
             <div class="col-6 col-md-12 card bg-dark rounded-5 p-3 shadow-lg" style="width: 20rem;">
-                <img src="../assets/img/imagen_perfil.png" class="card-img-top rounded-5 " alt="Imagen de Perfil">
+                <div class="contenedor_img_p">
+                    <img src="../assets/img/imagen_perfil.png" class="card-img-top rounded-5 imgs"
+                        alt="Imagen de Perfil">
+                </div>
+
                 <ul class="list-group list-group-flush rounded-4 mt-2">
                     <li class="list-group-item fw-bolder text-center p-1">Alain Toledo Gutierrez</li>
                     <li class="list-group-item fw-bolder text-center p-1">Desarrollador Web</li>
@@ -111,11 +122,12 @@
             <h2 class="mt-1 text-center  fs-3">Tecnologias en las que poseo experiencia</h2>
             <div class="col-12 imagenes_sobre_mi">
 
-                <img src="../assets/img/html.png" alt="Html 5">
-                <img src="../assets/img/css.png" alt="CSS 5">
-                <img src="../assets/img/git.png" alt="Git">
-                <img src="../assets/img/github.png" alt="Git Hub">
-                <img src="../assets/img/bootstrap.png" alt="Bootstrap">
+                <img class="imgf" src="../assets/img/html.png" alt="Html 5">
+                <img class="imgf" src="../assets/img/css.png" alt="CSS 5">
+                <img class="imgf" src="../assets/img/git.png" alt="Git">
+                <img class="imgf" src="../assets/img/github.png" alt="Git Hub">
+                <img class="imgf" src="../assets/img/bootstrap.png" alt="Bootstrap">
+                <img class="imgf" src="../assets/img/sass.png" alt="Sass">
             </div>
         </div>
 
@@ -163,8 +175,7 @@
                         </li>
                         <li><a href="./sobremi.html" class="text-decoration-none text-white links">SOBRE MI</a>
                         </li>
-                        <li><a href="./proyectos.html"
-                                class="text-decoration-none text-white links">PROYECTOS</a></li>
+                        <li><a href="./proyectos.html" class="text-decoration-none text-white links">PROYECTOS</a></li>
                         <li><a href="./contacto.html" class="text-decoration-none text-white links">CONTACTO</a>
                         </li>
                     </ul>

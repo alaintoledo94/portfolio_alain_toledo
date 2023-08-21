@@ -1,0 +1,108 @@
+@import "./mixin";
+@import "./variables";
+
+@import "./modules/pagina_index/pagina_index.scss";
+@import "./modules/pagina_principal/pagina_principal.scss";
+@import "./modules/pagina_proyecto/pagina_proyecto.scss";
+@import "./modules/pagina_sobremi/pagina_sobremi.scss";
+@import "./modules/pagina_contacto/pagina_contacto.scss";
+
+@import "./footer";
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+// HEADER
+nav {
+  background-color: $c-principal;
+  .navbar-brand {
+    font-size: 2rem !important;
+    margin-bottom: 6px;
+  }
+  .nav-link {
+    font-size: 1.5rem;
+  }
+}
+
+// BODY
+body {
+  .bread {
+    border-bottom: 1px solid rgb(92, 92, 92);
+  }
+
+  .breadcrumb {
+    margin-left: 12px;
+  }
+
+  font-family: $inter;
+
+  & a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+  }
+}
+
+// MEDIA QUERY
+
+@media (min-width: 768px) and (max-width: 914px) {
+  .index_img {
+    width: 350px;
+    margin-top: 20px;
+  }
+
+  .nombres_index {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 575px) {
+  .img_correo {
+    width: 350px;
+  }
+
+  .imagenes_sobre_mi {
+    margin-top: 15px;
+    @include alinear-fila;
+  }
+
+  .imagenes_sobre_mi img {
+    width: 80px;
+    height: auto;
+  }
+
+  .contenedor_principal_index {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .nombres_index {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contenedor_img {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 55px;
+  }
+
+  .index_img {
+    width: 250px;
+  }
+
+  .centrar_carrusel img {
+    width: 350px;
+    height: auto;
+  }
+}

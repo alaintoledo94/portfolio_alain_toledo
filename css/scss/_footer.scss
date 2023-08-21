@@ -1,0 +1,61 @@
+footer {
+  .footer_index {
+    .contenedorA {
+      margin-top: 16px;
+
+      .footer_nom {
+        font-weight: bold;
+        font-size: 1.5rem;
+      }
+
+      .footer_ocupacion {
+        margin-top: -20px;
+        font-size: 1.5rem;
+      }
+    }
+    .contenedor_links {
+      margin-top: 5px;
+      display: grid;
+      align-items: center;
+      justify-content: center;
+    }
+
+    margin-top: 100px;
+    .links {
+      font-weight: bold;
+      font-size: 1.5rem;
+    }
+    .footer_boletin {
+      margin-top: 15px;
+      display: grid;
+      align-items: center;
+      justify-content: center;
+
+      .contenedor_input {
+        margin-top: -20px;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+  & input {
+    border: none;
+    border-radius: 5px;
+    margin-top: 5px;
+    padding: 5px;
+  }
+  & button {
+    background-color: $c-secundario;
+    color: $c-fuentes;
+    &:hover {
+      background-color: $c-btnhover2 ;
+      transition: background-color 0.2s ease-in-out;
+    }
+  }
+  & img {
+    margin-top: -20px;
+    width: 30px;
+    height: 30px;
+  }
+}

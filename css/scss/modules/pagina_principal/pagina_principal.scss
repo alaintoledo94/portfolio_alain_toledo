@@ -1,0 +1,106 @@
+main {
+  section {
+    .contenedor_perfil {
+      gap: 20px;
+    @include alinear-centro;
+    }
+    .descripcion_perfil {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      width: 700px;
+      text-align: justify;
+    }
+    .contenedor_btn {
+      @include alinear-centro;
+
+      .btn_descripcion {
+        white-space: nowrap;
+
+        &:hover {
+          background-color: $c-btnhover2 !important;
+          transition: background-color 0.2s ease-in-out;
+        }
+      }
+    }
+  }
+  section {
+    .contenedor_proyecto {
+      padding-top: 25px;
+      padding-bottom: 40px;
+      @include alinear-centro;
+      gap: 20px;
+
+      .card {
+        border: none;
+        margin-bottom: 50px;
+        white-space: nowrap;
+        .card-title {
+          font-weight: bold;
+        }
+        .card-text {
+          margin-top: -10px;
+        }
+        .card-body {
+          margin-top: 5px;
+          height: 75px;
+          text-align: center;
+          justify-content: center;
+          color: black;
+          border-radius: 2px;
+        }
+        .btn-primary {
+          border: none;
+          font-weight: bold;
+          width: 100%;
+
+          &:hover {
+            background-color: $c-btnhover2 !important;
+            transition: background-color 0.2s ease-in-out;
+          }
+        }
+      }
+    }
+  }
+ 
+  
+
+}
+.contenedor_contacto {
+  margin-top: 100px;
+  @include alinear-centro;
+}
+
+
+.contacto_input {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  width: 300px;
+  padding: 15px;
+  gap: 10px;
+  
+
+}
+.contacto_btn {
+  margin-top: 8px;
+  color: white;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+    &:hover {
+      @include hover-principal;
+    }
+}
+.text_area {
+  border: none;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.contacto_textarea::placeholder {
+  text-align: center;
+  line-height: 10em;
+}

@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/css/styles.css">
     <link rel="stylesheet" href="../css/styles.css">
     <title>Contacto</title>
 </head>
@@ -36,28 +37,49 @@
             </div>
         </div>
     </nav>
+
+    <nav class="text-light shadow bread" style="--bs-breadcrumb-divider: '•';" aria-label="breadcrumb">
+        <ol class="breadcrumb ">
+            <li class="breadcrumb-item"><a href="../index.html">Index</a></li>
+            <li class="breadcrumb-item active text-light" aria-current="page">Contacto</li>
+        </ol>
+    </nav>
     <!-- FIN BARRA NAVEGACION -->
 
     <!-- MAIN CONTACTO -->
     <section class="container bg-light shadow-sm rounded-3 ">
 
 
-        <form class="row contenedor_contacto m-5 p-5" action="post">
-            <h1 class="text-center fs-3">Contacto</h1>
-            <div class="col-6 col-sm-12 contacto_input">
-                <label for="contacto_nombre">Nombre:</label>
-                <input class="contacto_input contacto_nombre shadow-sm" type="text" placeholder="NOMBRE Y APELLIDO*">
-                <label for="contacto_telefono">Telefono:</label>
-                <input class="contacto_input contacto_telefono shadow-sm" type="text" placeholder="NUM TELEFONO*">
-                <label for="contacto_correo">Email:</label>
-                <input class="contacto_input contacto_correo shadow-sm" type="text" placeholder="CORREO ELECTRONICO*">
-                <label for="contacto_textarea">Mensaje</label>
-                <textarea class="contacto_textarea shadow-sm border-0" name="" id="" cols="30" rows="10"
-                    placeholder="MENSAJE..."></textarea>
-                <button class="contacto_btn bg-dark shadow-sm">ENVIAR MENSAJE</button>
+        <div class="row contenedor_contacto">
+            <div class="d-flex align-content-center justify-content-center col-sm-12 col-xl-6">
+                <img src="../assets/img/correo.png" alt="imagen correo" class="img_correo imgf">
+            </div>
 
 
-        </form>
+
+            <div class="col-sm-12 col-xl-6 d-flex align-content-center justify-content-center ">
+                <form class=" m-5 p-5" action="post">
+                    <h1 class="text-center fs-3">Contacto</h1>
+                    <div class="col-6 col-sm-12 contacto_input">
+                        <label for="contacto_nombre">Nombre:</label>
+                        <input class="contacto_input contacto_nombre shadow-sm" type="text"
+                            placeholder="NOMBRE Y APELLIDO*">
+                        <label for="contacto_telefono">Telefono:</label>
+                        <input class="contacto_input contacto_telefono shadow-sm" type="text"
+                            placeholder="NUM TELEFONO*">
+                        <label for="contacto_correo">Email:</label>
+                        <input class="contacto_input contacto_correo shadow-sm" type="text"
+                            placeholder="CORREO ELECTRONICO*">
+                        <label for="contacto_textarea">Mensaje</label>
+                        <textarea class="contacto_textarea shadow-sm border-0" name="" id="" cols="30" rows="10"
+                            placeholder="MENSAJE..."></textarea>
+                        <button class="contacto_btn bg-dark shadow-sm">ENVIAR MENSAJE</button>
+
+
+                </form>
+            </div>
+        </div>
+
 
     </section>
     <!-- INICIO FOOTER -->
@@ -85,8 +107,7 @@
                         </li>
                         <li><a href="./sobremi.html" class="text-decoration-none text-white links">SOBRE MI</a>
                         </li>
-                        <li><a href="./proyectos.html"
-                                class="text-decoration-none text-white links">PROYECTOS</a></li>
+                        <li><a href="./proyectos.html" class="text-decoration-none text-white links">PROYECTOS</a></li>
                         <li><a href="./contacto.html" class="text-decoration-none text-white links">CONTACTO</a>
                         </li>
                     </ul>

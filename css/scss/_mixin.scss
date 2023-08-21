@@ -1,0 +1,29 @@
+@mixin alinear-centro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin alinear-fila {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin hover-principal {
+    background-color: #636363 !important;
+    transition: background-color 0.2s ease-in-out;
+}
+
+@mixin hover-secundario {
+    background-color: #7d7df8 !important;
+    transition: background-color 0.2s ease-in-out;
+}
+
+@mixin animar-img{
+    -webkit-transform:scale(1.3);
+    transform:scale(1.2);
+    transition:  0.5s ease-in;
+    transition: 0.5s ease-out;
+    border-radius: 2px;
+}

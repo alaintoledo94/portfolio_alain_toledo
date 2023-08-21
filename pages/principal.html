@@ -5,13 +5,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css">
-  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/css/styles.css">
   <title>Principal</title>
 </head>
 
 <body>
+
+
   <!-- BARRA NAVEGACION -->
-  <nav class="navbar navbar-expand-lg navbar-dark " >
+  <nav class="navbar navbar-expand-lg navbar-dark ">
     <div class="container-fluid">
       <a class="navbar-brand" href="../index.html">Portfolio Alain Toledo</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -21,21 +23,29 @@
       <div class="collapse navbar-collapse l" id="navbarNav">
         <ul class="navbar-nav d-flex">
           <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="./principal.html">Inicio</a>
+            <a class="nav-link active" aria-current="page" href="./principal.html">Inicio</a>
           </li>
           <li class="nav-item">
-              <a class="nav-link " href="./sobremi.html">Sobre Mi</a>
+            <a class="nav-link " href="./sobremi.html">Sobre Mi</a>
           </li>
           <li class="nav-item">
-              <a class="nav-link" href="./proyectos.html">Proyectos</a>
+            <a class="nav-link" href="./proyectos.html">Proyectos</a>
           </li>
           <li class="nav-item">
-              <a class="nav-link" href="./contacto.html">Contacto</a>
+            <a class="nav-link" href="./contacto.html">Contacto</a>
           </li>
-      </ul>
+        </ul>
       </div>
     </div>
   </nav>
+
+  <nav class="text-light shadow bread" style="--bs-breadcrumb-divider: '•';" aria-label="breadcrumb">
+    <ol class="breadcrumb ">
+      <li class="breadcrumb-item"><a href="../index.html">Index</a></li>
+      <li class="breadcrumb-item active text-light" aria-current="page">Página Principal</li>
+    </ol>
+  </nav>
+
   <!-- FIN BARRA NAVEGACION -->
 
   <!-- INICIO MAIN -->
@@ -43,12 +53,15 @@
 
     <!-- MAIN-SOBRE MI -->
 
-    <section class="container bg-light shadow-sm  mt-3 rounded-3 ">
+    <section class="container bg-light shadow-sm  mt-4 rounded-3 ">
 
       <div class="row contenedor_perfil p-3">
         <h1 class=" text-center  fs-3">Sobre Mi</h1>
         <div class="card bg-dark rounded-5 p-3 shadow-lg" style="width: 18rem;">
-          <img src="../assets/img/imagen_perfil.png" class="card-img-top rounded-5 " alt="Imagen de perfil">
+          <div class="contenedor_img_p">
+            <img src="../assets/img/imagen_perfil.png" class="imgs card-img-top rounded-5 " alt="Imagen de perfil">
+          </div>
+
 
           <ul class="list-group list-group-flush rounded-4 mt-2">
             <li class="list-group-item fw-bolder">Alain Toledo Gutierrez</li>
@@ -99,17 +112,24 @@
       <div class="row contenedor_proyecto ">
         <h2 class="text-center fs-3">Proyectos</h2>
         <div class="card col-4 bg-dark p-2 shadow-sm" style="width: 18rem;">
-          <img src="../assets/img/engranaje.png" class="card-img-top proyecto_img bg-dark-subtle rounded-2 " alt="Imagen engranaje">
+          <div class="contenedor_img_p">
+            <img src="../assets/img/engranaje.png" class="imgs card-img-top proyecto_img bg-dark-subtle rounded-2 "
+              alt="Imagen engranaje">
+          </div>
+
           <div class="card-body rounded-3 mt-2 text-bg-dark">
             <h3 class="card-title fs-5">Nombre del Proyecto</h3>
             <p class="card-text">Descripcion corta del proyecto.</p>
-            <a href="../pages/proyectos.html" class="btn btn-primary mt-4 shadow-sm bg-dark p-2">Acceder al Proyecto</a>
+            <a href="../pages/proyectos.html" class="btn btn-primary mt-4 shadow-sm bg-dark ">Acceder al Proyecto</a>
           </div>
         </div>
 
         <div class="card col-4 bg-dark p-2 shadow-sm " style="width: 18rem;">
-          <img src="../assets/img/engranaje.png" class="card-img-top proyecto_img bg-light bg-dark-subtle rounded-2"
-            alt="Imagen engranaje">
+          <div class="contenedor_img_p">
+            <img src="../assets/img/engranaje.png"
+              class="imgs card-img-top proyecto_img bg-light bg-dark-subtle rounded-2" alt="Imagen engranaje">
+          </div>
+
           <div class="card-body rounded-3 mt-2 text-bg-dark">
             <h3 class="card-title fs-5">Nombre del Proyecto</h3>
             <p class="card-text">Descripcion corta del proyecto.</p>
@@ -118,8 +138,11 @@
         </div>
 
         <div class="card col-4 bg-dark p-2" style="width: 18rem;">
-          <img src="../assets/img/engranaje.png" class="card-img-top proyecto_img bg-light bg-dark-subtle rounded-2"
-            alt="Imagen engranaje">
+          <div class="contenedor_img_p">
+            <img src="../assets/img/engranaje.png"
+              class="imgs card-img-top proyecto_img bg-light bg-dark-subtle rounded-2" alt="Imagen engranaje">
+          </div>
+
           <div class="card-body rounded-3 mt-2 shadow-sm text-bg-dark">
             <h3 class="card-title fs-5">Nombre del Proyecto</h3>
             <p class="card-text">Descripcion corta del proyecto.</p>
@@ -134,26 +157,32 @@
   <!-- MAIN CONTACTO -->
   <section class="container bg-light shadow-sm rounded-3 ">
 
-
-    <form class="row contenedor_contacto m-5 p-5" action="#">
-      <h4 class="text-center fs-4">Contacto:</h4>
-      <div class="col-4 col-sm-12 contacto_input">
-        <label class="label-contacto" for="contacto_nombre">Nombre y Apellido:</label>
-        <input id="contacto_nombre" class="contacto_input shadow-sm" type="text" placeholder="NOMBRE Y APELLIDO*">
-        <label for="contacto_telefono">Telefono:</label>
-        <input id="contacto_telefono" class="contacto_input shadow-sm" type="text" placeholder="NUM TELEFONO*">
-        <label for="contacto_email">Email:</label>
-        <input id="contacto_email" class="contacto_input shadow-sm" type="text" placeholder="CORREO ELECTRONICO*">
+    <div class="row contenedor_contacto">
+      <div class="d-flex align-content-center justify-content-center col-sm-12 col-xl-6">
+        <img src="../assets/img/correo.png" alt="imagen correo" class="img_correo imgf">
       </div>
 
-      <div class="col-4 col-sm-12 text_area">
-        <label for="contacto_ta">Mensaje:</label>
-        <textarea if class="contacto_textarea shadow-sm border-0" name="" id="contacto_ta" cols="30" rows="10"
-          placeholder="MENSAJE..."></textarea>
-        <button class="contacto_btn bg-dark shadow-sm">ENVIAR MENSAJE</button>
-      </div>
 
-    </form>
+
+      <div class="col-sm-12 col-xl-6 d-flex align-content-center justify-content-center ">
+        <form class=" m-5 p-5" action="post">
+          <h1 class="text-center fs-3">Contacto</h1>
+          <div class="col-6 col-sm-12 contacto_input">
+            <label for="contacto_nombre">Nombre:</label>
+            <input class="contacto_input contacto_nombre shadow-sm" type="text" placeholder="NOMBRE Y APELLIDO*">
+            <label for="contacto_telefono">Telefono:</label>
+            <input class="contacto_input contacto_telefono shadow-sm" type="text" placeholder="NUM TELEFONO*">
+            <label for="contacto_correo">Email:</label>
+            <input class="contacto_input contacto_correo shadow-sm" type="text" placeholder="CORREO ELECTRONICO*">
+            <label for="contacto_textarea">Mensaje</label>
+            <textarea class="contacto_textarea shadow-sm border-0" name="" id="" cols="30" rows="10"
+              placeholder="MENSAJE..."></textarea>
+            <button class="contacto_btn bg-dark shadow-sm">ENVIAR MENSAJE</button>
+
+
+        </form>
+      </div>
+    </div>
 
   </section>
   <!-- FIN MAIN -->
