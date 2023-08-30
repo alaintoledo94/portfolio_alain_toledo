@@ -4,6 +4,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Sitio web portfolio de desarrollador web Alain Toledo">
+  <meta name="keywords"
+    content="HTM, CSS, BOTSTRAP, SASS, GITHUB, DESARROLLADOR, DESARROLLADOR WEB, ALAIN TOLEDO, CHILE">
   <link rel="stylesheet" href="./css/bootstrap/bootstrap.min.css" />
   <link rel="stylesheet" href="./css/css/styles.css" />
   <title>PORTFOLIO CON BOOTSTRAP</title>
@@ -12,31 +15,37 @@
 <body class="body_index">
 
   <!-- BARRA NAVEGACION -->
-  <nav class="navbar navbar-expand-lg navbar-dark shadow  ">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Portfolio Alain Toledo</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse l" id="navbarNav">
-        <ul class="navbar-nav d-flex">
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="./pages/principal.html">Inicio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./pages/sobremi.html">Sobre Mi</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./pages/proyectos.html">Proyectos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./pages/contacto.html">Contacto</a>
-          </li>
-        </ul>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark shadow  ">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Portfolio Alain Toledo</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse l" id="navbarNav">
+          <ul class="navbar-nav d-flex">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./pages/principal.html">Principal</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/sobremi.html">Sobre Mi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/proyectos.html">Proyectos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
+  </header>
+
   <!-- FIN BARRA NAVEGACION -->
 
   <!-- MAIN -->
@@ -92,7 +101,8 @@
         <ul class="col-md-4 contenedor_links">
           <ul class="list-unstyled">
             <li class="fw-bold ">Links</li>
-            <li><a href="./pages/principal.html" class="text-decoration-none text-white links">INICIO</a></li>
+            <li><a href="./index.html" class="text-decoration-none text-white links">INICIO</a></li>
+            <li><a href="./pages/principal.html" class="text-decoration-none text-white links">PRINCIPAL</a></li>
             <li><a href="./pages/sobremi.html" class="text-decoration-none text-white links">SOBRE MI</a></li>
             <li><a href="./pages/proyectos.html" class="text-decoration-none text-white links">PROYECTOS</a></li>
             <li><a href="./pages/contacto.html" class="text-decoration-none text-white links">CONTACTO</a></li>
@@ -103,9 +113,11 @@
           <p class="links">BOLETÍN</p>
           <div class="contenedor_input">
             <label for="">SUSCRIBIRSE PARA RECIBIR NOTIFICACIONES</label>
-            <input class="p-2 m-1" type="text" placeholder="NOMBRE Y APELLIDO*">
-            <input class="p-2 m-1" type="text" placeholder="CORREO ELECTRONICO*">
-            <BUtton class="border-0 rounded-2 fw-bold p-2 m-2">SUSCRIBIRSE</BUtton>
+            <label for="boletin_nombre">Nombre y Apellido</label>
+            <input class="p-2 m-1" id="boletin_nombre" type="text" placeholder="NOMBRE Y APELLIDO*">
+            <label for="boletin_emai">Correo Electronico</label>
+            <input class="p-2 m-1" id="boletin_email" type="text" placeholder="CORREO ELECTRONICO*">
+            <button class="border-0 rounded-2 fw-bold p-2 m-2">SUSCRIBIRSE</button>
           </div>
         </div>
 

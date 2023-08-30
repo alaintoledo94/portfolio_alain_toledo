@@ -185,9 +185,6 @@ main section .contenedor_proyecto .card .btn-primary:hover {
 .imagenes_sobre_mi {
   gap: 20px;
   margin-top: 15px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .imagenes_sobre_mi img {
@@ -195,32 +192,31 @@ main section .contenedor_proyecto .card .btn-primary:hover {
   height: auto;
 }
 
-section .contenedor_main_sobre-mi {
+main .contenedor_main_sobre-mi {
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
-section .contenedor_main_sobre-mi .contenedor_img_p:hover .imgs {
+main .contenedor_main_sobre-mi .contenedor_img_p:hover .imgs {
   -webkit-transform: scale(1.3);
   transform: scale(1.2);
   transition: 0.5s ease-in;
   transition: 0.5s ease-out;
   border-radius: 2px;
 }
-section .contenedor_main_sobre-mi .contenedor_img_p {
+main .contenedor_main_sobre-mi .contenedor_img_p {
   overflow: hidden;
 }
-section .contenedor_main_sobre-mi .btn_sobre_mi:hover {
+main .contenedor_main_sobre-mi .btn_sobre_mi:hover {
   background-color: #636363 !important;
   transition: background-color 0.2s ease-in-out;
 }
-section div .imagenes_sobre_mi {
-  margin-top: 15px;
-  display: flex;
-  align-items: center;
+main .imagenes_sobre_mi {
+  margin-top: 10px;
   justify-content: center;
+  text-align: center;
 }
-section div .imgf:hover {
+main .imgf:hover {
   -webkit-transform: rotateY(180deg);
   -webkit-transform-style: preserve-3d;
   transform: rotateY(180deg);
@@ -345,7 +341,7 @@ body a {
 }
 @media (min-width: 0px) and (max-width: 575px) {
   .img_correo {
-    width: 350px;
+    width: 300px;
   }
   .imagenes_sobre_mi {
     margin-top: 15px;

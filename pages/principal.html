@@ -4,6 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Si tio web Resumen del portfolio del desarrollador web Alain Toledo">
+  <meta name="keywords"
+    content="HTML, CSS, SASS, BOOTSTRAP, GITHUB, RESUMEN PORTFOLIO, DESARROLLADOR WEB, ALAIN TOLEDO, CHILE">
   <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css">
   <link rel="stylesheet" href="../css/css/styles.css">
   <title>Principal</title>
@@ -13,38 +16,43 @@
 
 
   <!-- BARRA NAVEGACION -->
-  <nav class="navbar navbar-expand-lg navbar-dark ">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="../index.html">Portfolio Alain Toledo</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse l" id="navbarNav">
-        <ul class="navbar-nav d-flex">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="./principal.html">Inicio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link " href="./sobremi.html">Sobre Mi</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./proyectos.html">Proyectos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./contacto.html">Contacto</a>
-          </li>
-        </ul>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html">Portfolio Alain Toledo</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse l" id="navbarNav">
+          <ul class="navbar-nav d-flex">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./principal.html">Principal</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="./sobremi.html">Sobre Mi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./proyectos.html">Proyectos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
 
-  <nav class="text-light shadow bread" style="--bs-breadcrumb-divider: '•';" aria-label="breadcrumb">
-    <ol class="breadcrumb ">
-      <li class="breadcrumb-item"><a href="../index.html">Index</a></li>
-      <li class="breadcrumb-item active text-light" aria-current="page">Página Principal</li>
-    </ol>
-  </nav>
+    <nav class="text-light shadow bread" style="--bs-breadcrumb-divider: '•';" aria-label="breadcrumb">
+      <ol class="breadcrumb ">
+        <li class="breadcrumb-item"><a href="../index.html">Index</a></li>
+        <li class="breadcrumb-item active text-light" aria-current="page">Página Principal</li>
+      </ol>
+    </nav>
+  </header>
 
   <!-- FIN BARRA NAVEGACION -->
 
@@ -91,7 +99,7 @@
 
           <div class="col-6  contenedor_btn">
             <button class="btn_descripcion bg-dark shadow-sm rounded-3 border-0  p-2 fw-bold text-light "><a
-                href="../pages/sobremi.html">VER
+                href="./sobremi.html">VER
                 MAS</a></button>
           </div>
           <div class="col-6  contenedor_btn">
@@ -120,7 +128,7 @@
           <div class="card-body rounded-3 mt-2 text-bg-dark">
             <h3 class="card-title fs-5">Nombre del Proyecto</h3>
             <p class="card-text">Descripcion corta del proyecto.</p>
-            <a href="../pages/proyectos.html" class="btn btn-primary mt-4 shadow-sm bg-dark ">Acceder al Proyecto</a>
+            <a href="./proyectos.html" class="btn btn-primary mt-4 shadow-sm bg-dark ">Acceder al Proyecto</a>
           </div>
         </div>
 
@@ -133,7 +141,7 @@
           <div class="card-body rounded-3 mt-2 text-bg-dark">
             <h3 class="card-title fs-5">Nombre del Proyecto</h3>
             <p class="card-text">Descripcion corta del proyecto.</p>
-            <a href="../pages/proyectos.html" class="btn btn-primary mt-4 bg-dark">Acceder al Proyecto</a>
+            <a href="./proyectos.html" class="btn btn-primary mt-4 bg-dark">Acceder al Proyecto</a>
           </div>
         </div>
 
@@ -146,45 +154,46 @@
           <div class="card-body rounded-3 mt-2 shadow-sm text-bg-dark">
             <h3 class="card-title fs-5">Nombre del Proyecto</h3>
             <p class="card-text">Descripcion corta del proyecto.</p>
-            <a href="../pages/proyectos.html" class="btn btn-primary mt-4 bg-dark">Acceder al Proyecto</a>
+            <a href="./proyectos.html" class="btn btn-primary mt-4 bg-dark">Acceder al Proyecto</a>
           </div>
         </div>
       </div>
     </section>
 
+
+
+    <!-- MAIN CONTACTO -->
+    <section class="container bg-light shadow-sm rounded-3 ">
+
+      <div class="row contenedor_contacto">
+        <div class="d-flex align-content-center justify-content-center col-sm-12 col-xl-6">
+          <img src="../assets/img/correo.png" alt="imagen correo" class="img_correo imgf">
+        </div>
+
+
+
+        <div class="col-sm-12 col-xl-6 d-flex align-content-center justify-content-center ">
+          <form class=" m-5 p-5" action="post">
+            <h1 class="text-center fs-3">Contacto</h1>
+            <div class="col-6 col-sm-12 contacto_input">
+              <label for="contacto_nombre">Nombre:</label>
+              <input class="contacto_input contacto_nombre shadow-sm" type="text" placeholder="NOMBRE Y APELLIDO*">
+              <label for="contacto_telefono">Telefono:</label>
+              <input class="contacto_input contacto_telefono shadow-sm" type="text" placeholder="NUM TELEFONO*">
+              <label for="contacto_correo">Email:</label>
+              <input class="contacto_input contacto_correo shadow-sm" type="text" placeholder="CORREO ELECTRONICO*">
+              <label for="contacto_textarea">Mensaje</label>
+              <textarea class="contacto_textarea shadow-sm border-0" name="" id="" cols="30" rows="10"
+                placeholder="MENSAJE..."></textarea>
+              <button class="contacto_btn bg-dark shadow-sm">ENVIAR MENSAJE</button>
+
+
+          </form>
+        </div>
+      </div>
+
+    </section>
   </main>
-
-  <!-- MAIN CONTACTO -->
-  <section class="container bg-light shadow-sm rounded-3 ">
-
-    <div class="row contenedor_contacto">
-      <div class="d-flex align-content-center justify-content-center col-sm-12 col-xl-6">
-        <img src="../assets/img/correo.png" alt="imagen correo" class="img_correo imgf">
-      </div>
-
-
-
-      <div class="col-sm-12 col-xl-6 d-flex align-content-center justify-content-center ">
-        <form class=" m-5 p-5" action="post">
-          <h1 class="text-center fs-3">Contacto</h1>
-          <div class="col-6 col-sm-12 contacto_input">
-            <label for="contacto_nombre">Nombre:</label>
-            <input class="contacto_input contacto_nombre shadow-sm" type="text" placeholder="NOMBRE Y APELLIDO*">
-            <label for="contacto_telefono">Telefono:</label>
-            <input class="contacto_input contacto_telefono shadow-sm" type="text" placeholder="NUM TELEFONO*">
-            <label for="contacto_correo">Email:</label>
-            <input class="contacto_input contacto_correo shadow-sm" type="text" placeholder="CORREO ELECTRONICO*">
-            <label for="contacto_textarea">Mensaje</label>
-            <textarea class="contacto_textarea shadow-sm border-0" name="" id="" cols="30" rows="10"
-              placeholder="MENSAJE..."></textarea>
-            <button class="contacto_btn bg-dark shadow-sm">ENVIAR MENSAJE</button>
-
-
-        </form>
-      </div>
-    </div>
-
-  </section>
   <!-- FIN MAIN -->
 
 
@@ -212,7 +221,8 @@
         <ul class="col-md-4 contenedor_links">
           <ul class="list-unstyled">
             <li class="fw-bold ">Links</li>
-            <li><a href="./principal.html" class="text-decoration-none text-white links">INICIO</a></li>
+            <li><a href="../index.html" class="text-decoration-none text-white links">INICIO</a></li>
+            <li><a href="./principal.html" class="text-decoration-none text-white links">PRINCIPAL</a></li>
             <li><a href="./sobremi.html" class="text-decoration-none text-white links">SOBRE MI</a></li>
             <li><a href="./proyectos.html" class="text-decoration-none text-white links">PROYECTOS</a></li>
             <li><a href="./contacto.html" class="text-decoration-none text-white links">CONTACTO</a></li>
@@ -223,9 +233,11 @@
           <p class="links">BOLETÍN</p>
           <div class="contenedor_input">
             <label for="">SUSCRIBIRSE PARA RECIBIR NOTIFICACIONES</label>
-            <input class="p-2 m-1" type="text" placeholder="NOMBRE Y APELLIDO*">
-            <input class="p-2 m-1" type="text" placeholder="CORREO ELECTRONICO*">
-            <button class="border-0 rounded-2 fw-bold p-2 m-2 shadow-sm">SUSCRIBIRSE</button>
+            <label for="boletin_nombre">Nombre y Apellido</label>
+            <input class="p-2 m-1" id="boletin_nombre" type="text" placeholder="NOMBRE Y APELLIDO*">
+            <label for="boletin_emai">Correo Electronico</label>
+            <input class="p-2 m-1" id="boletin_email" type="text" placeholder="CORREO ELECTRONICO*">
+            <button class="border-0 rounded-2 fw-bold p-2 m-2">SUSCRIBIRSE</button>
           </div>
         </div>
 

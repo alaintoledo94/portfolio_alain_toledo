@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sitio web de la informacion personal del portfolio de desarrollador web Alain Toledo">
+    <meta name="keywords" content="HTML, CSS, SASS, BOOTSTRAP, GITHUB, CURRICULUM, CV, EXPERIENCIAM, ALAIN TOLEDO, DESARROLLADOR WEB, CHILE">
     <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="../css/css/styles.css">
     <title>Sobre Mi</title>
@@ -12,6 +14,7 @@
 <body>
 
     <!-- BARRA NAVEGACION -->
+<header>
     <nav class="navbar navbar-expand-lg navbar-dark  ">
         <div class="container-fluid">
             <a class="navbar-brand" href="../index.html">Portfolio Alain Toledo</a>
@@ -22,7 +25,10 @@
             <div class="collapse navbar-collapse l" id="navbarNav">
                 <ul class="navbar-nav d-flex">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="./principal.html">Inicio</a>
+                        <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="./principal.html">Principal</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" href="./sobremi.html">Sobre Mi</a>
@@ -44,10 +50,12 @@
             <li class="breadcrumb-item active text-light" aria-current="page">Sobre Mi</li>
         </ol>
     </nav>
+</header>
     <!-- FIN BARRA NAVEGACION -->
 
     <!-- INICIO MAIN-SOBRE MI -->
 
+<main>
     <section class="container justify-content-center mt-4">
 
         <div class="row contenedor_main_sobre-mi bg-light p-3 shadow-sm rounded-3 ">
@@ -68,7 +76,7 @@
                 </ul>
             </div>
 
-            <div class="col-12 col-lg-6 col-md-12">
+            <div class="col-12 col-lg-6 col-md-12 mt-4">
                 <p>
                     Soy una persona responsable y comprometida que ha obtenido el título de Programador Computacional en
                     el Instituto
@@ -118,10 +126,18 @@
         </div>
 
 
+
+
+
+
+
+
+    </section>
+    <div class="container contenedor_img_p" >
         <div class="row mt-5 bg-light p-3 shadow-sm rounded-3">
             <h2 class="mt-1 text-center  fs-3">Tecnologias en las que poseo experiencia</h2>
-            <div class="col-12 imagenes_sobre_mi">
-
+            <div class="col-12 col-sm-12 col-xl-12 imagenes_sobre_mi ">
+    
                 <img class="imgf" src="../assets/img/html.png" alt="Html 5">
                 <img class="imgf" src="../assets/img/css.png" alt="CSS 5">
                 <img class="imgf" src="../assets/img/git.png" alt="Git">
@@ -130,8 +146,10 @@
                 <img class="imgf" src="../assets/img/sass.png" alt="Sass">
             </div>
         </div>
+    </div>
 
 
+    <div class="container">
         <div class="row mt-5 bg-light  p-4  shadow-sm rounded-3">
             <h3 class="text-center">Ubicacion</h3>
             <div class="col-12 d-flex justify-content-center align-content-center">
@@ -141,12 +159,9 @@
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
+    </div>
 
-
-
-
-
-    </section>
+</main>
 
     <!-- FIN MAIN-SOBRE MI -->
 
@@ -171,7 +186,8 @@
                 <ul class="col-md-4 contenedor_links">
                     <ul class="list-unstyled">
                         <li class="fw-bold ">Links</li>
-                        <li><a href="./principal.html" class="text-decoration-none text-white links">INICIO</a>
+                        <li><a href="../index.html" class="text-decoration-none text-white links">INICIO</a></li>
+                        <li><a href="./principal.html" class="text-decoration-none text-white links">PRINCIPAL</a>
                         </li>
                         <li><a href="./sobremi.html" class="text-decoration-none text-white links">SOBRE MI</a>
                         </li>
@@ -185,10 +201,12 @@
                     <p class="links">BOLETÍN</p>
                     <div class="contenedor_input">
                         <label for="">SUSCRIBIRSE PARA RECIBIR NOTIFICACIONES</label>
-                        <input class="p-2 m-1" type="text" placeholder="NOMBRE Y APELLIDO*">
-                        <input class="p-2 m-1" type="text" placeholder="CORREO ELECTRONICO*">
-                        <button class="border-0 rounded-2 fw-bold p-2 m-2 shadow-sm">SUSCRIBIRSE</button>
-                    </div>
+                        <label for="boletin_nombre">Nombre y Apellido</label>
+                        <input class="p-2 m-1" id="boletin_nombre" type="text" placeholder="NOMBRE Y APELLIDO*">
+                        <label for="boletin_emai">Correo Electronico</label>
+                        <input class="p-2 m-1" id="boletin_email" type="text" placeholder="CORREO ELECTRONICO*">
+                        <BUtton class="border-0 rounded-2 fw-bold p-2 m-2">SUSCRIBIRSE</BUtton>
+                      </div>
                 </div>
 
             </div>

@@ -1,36 +1,33 @@
-.contenedor_img_p:hover .imgs{
+.contenedor_img_p:hover .imgs {
   @include animar-img;
- 
-   
 }
 
-.contenedor_img_p{
-   overflow:hidden;
+.contenedor_img_p {
+  overflow: hidden;
 }
 
-    .centrar_carrusel {
-        width: 80vw;
-        height: 50vh;
-       @include alinear-centro;
-      }
+.centrar_carrusel {
+  width: 80vw;
+  height: 50vh;
+  @include alinear-centro;
+}
 
-      .carousel-control-prev-icon{
-        background-color: #000000;
-        border-radius: 5px;
-      }
-      
-      .carousel-control-next-icon{
-        background-color: #000000;
-        border-radius: 5px;
-      }
+.carousel-control-prev-icon {
+  background-color: #000000;
+  border-radius: 5px;
+}
 
-      .imagenes_sobre_mi {
-        gap: 20px;
-        margin-top: 15px;
-        @include alinear-centro;
-      }
-      
-      .imagenes_sobre_mi img {
-        width: 80px;
-        height: auto;
-      }
+.carousel-control-next-icon {
+  background-color: #000000;
+  border-radius: 5px;
+}
+
+.imagenes_sobre_mi {
+  gap: 20px;
+  margin-top: 15px;
+}
+
+.imagenes_sobre_mi img {
+  width: 80px;
+  height: auto;
+}

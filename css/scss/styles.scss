@@ -17,10 +17,12 @@
 // HEADER
 nav {
   background-color: $c-principal;
+
   .navbar-brand {
     font-size: 2rem !important;
     margin-bottom: 6px;
   }
+
   .nav-link {
     font-size: 1.5rem;
   }
@@ -62,7 +64,7 @@ body {
 
 @media (min-width: 0px) and (max-width: 575px) {
   .img_correo {
-    width: 350px;
+    width: 300px;
   }
 
   .imagenes_sobre_mi {

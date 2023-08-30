@@ -1,4 +1,4 @@
-section {
+main {
   .contenedor_main_sobre-mi {
     display: flex;
     align-items: center;
@@ -15,20 +15,17 @@ section {
       @include hover-principal;
     }
   }
-  div {
-    .imagenes_sobre_mi {
-      margin-top: 15px;
-      @include alinear-centro;
-    }
-    .imgf:hover {
-      -webkit-transform: rotateY(180deg);
-      -webkit-transform-style: preserve-3d;
-      transform: rotateY(180deg);
-      transform-style: preserve-3d;
-      transition: 0.8s ease-in-out;
-    }
 
-   
-    
+  .imagenes_sobre_mi {
+    margin-top: 10px;
+    justify-content: center;
+    text-align: center;
+  }
+  .imgf:hover {
+    -webkit-transform: rotateY(180deg);
+    -webkit-transform-style: preserve-3d;
+    transform: rotateY(180deg);
+    transform-style: preserve-3d;
+    transition: 0.8s ease-in-out;
   }
 }
