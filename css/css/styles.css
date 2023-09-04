@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 .body_index {
   background-color: #353535;
@@ -304,9 +305,10 @@ footer img {
 
 nav {
   background-color: #4e4feb;
+  --bs-breadcrumb-divider: "•";
 }
 nav .navbar-brand {
-  font-size: 2rem !important;
+  font-size: 2rem;
   margin-bottom: 6px;
 }
 nav .nav-link {
@@ -315,6 +317,10 @@ nav .nav-link {
 
 body {
   font-family: "Inter", sans-serif;
+}
+body .img_404 {
+  width: 350px;
+  height: 350px;
 }
 body .bread {
   border-bottom: 1px solid rgb(92, 92, 92);

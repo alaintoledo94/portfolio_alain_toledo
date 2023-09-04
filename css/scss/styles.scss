@@ -17,9 +17,10 @@
 // HEADER
 nav {
   background-color: $c-principal;
+  --bs-breadcrumb-divider: '•';
 
   .navbar-brand {
-    font-size: 2rem !important;
+    font-size: 2rem;
     margin-bottom: 6px;
   }
 
@@ -30,6 +31,12 @@ nav {
 
 // BODY
 body {
+
+  .img_404{
+    width: 350px;
+    height: 350px;
+  }
+
   .bread {
     border-bottom: 1px solid rgb(92, 92, 92);
   }
